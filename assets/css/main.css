@@ -2853,7 +2853,7 @@ input, select, textarea {
 	}
 
 		ul li {
-			padding-left: 0.5rem;
+			text-align: left;
 		}
 
 		ul.divided {
@@ -2904,7 +2904,7 @@ input, select, textarea {
 /* Section/Article */
 
 	section.special, article.special {
-		text-align: center;
+		text-align: left;
 	}
 
 	header {
@@ -4951,4 +4951,61 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+
+.contact-toggle {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	font-family: Arial, sans-serif;
+	background: transparent;
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.toggle-btn {
+	background-color: #0077b5;
+	color: white;
+	border: none;
+	padding: 12px 18px;
+	border-radius: 8px;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+}
+
+.contact-details {
+	display: none;
+	margin-top: 10px;
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	padding: 15px;
+	width: 280px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+	.contact-details a {
+		color: #0077b5;
+		text-decoration: none;
+		display: inline-block;
+		margin-top: 5px;
+	}
+
+		.contact-details a:hover {
+			text-decoration: underline;
+		}
+
+	.contact-details b {
+		display: inline-block;
+		margin-top: 10px;
+	}
+
+	.contact-details p {
+		margin: 0;
+		padding: 0;
 	}
